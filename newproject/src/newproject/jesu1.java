@@ -13,7 +13,7 @@ public class jesu1 {
 	//	WebDriver driver = new ChromeDriver();
 		
 		
-		String baseUrl = "\"file:///C:/Users/Jesu.Irudhaya.Dhasan/git/demodev/demodev/index.html\"";
+		String baseUrl = "file:///C:/Users/Jesu.Irudhaya.Dhasan/git/demodev/demodev/index.html";
         String expectedTitle = "Industrious by TEMPLATED"; 	
         String actualTitle = "";
 		
