@@ -14,7 +14,7 @@ public class jesu1 {
 		
 		
 		String baseUrl = "\"file:///C:/Users/Jesu.Irudhaya.Dhasan/git/demodev/demodev/index.html\"";
-        String expectedTitle = "Industrious by TEMPLATED";
+        String expectedTitle = "Industrious by TEMPLATED"; 	
         String actualTitle = "";
 		
 		
