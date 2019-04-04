@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.sun.org.apache.bcel.internal.generic.Select;
+
 public class jesu1 {
 
 	public static void main (String args[]){
@@ -34,12 +36,24 @@ public class jesu1 {
         String xPathItemSelector = "//*[@id=\"header\"]/a";
         WebElement dropDownItem = driver.findElement(By.xpath(xPathItemSelector));
         if (dropDownItem.isDisplayed() ) {
-        	 System.out.println("Heading Verification Test Passed!");
+        	
+        	
+        	 System.out.println("Heading is existd!");
+        	 WebElement dropdown = driver.findElement(By.className("logo"));
+ 			
+ 			boolean status = true;
+ 			
+ 			if(status=true){
+ 				System.out.println("heading validated");
+ 			} else {
+ 				System.out.println("heading validation failed");
+ 			}
+        	 
         } else {
             System.out.println("Heading Verification Test Failed");
         };
 
-        	 
+		
        
         
         
