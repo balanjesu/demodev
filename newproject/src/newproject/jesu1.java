@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import com.sun.org.apache.bcel.internal.generic.Select;
 
 public class jesu1 {
 
@@ -20,7 +19,7 @@ public class jesu1 {
 		String baseUrl = "file:///C:/Users/Jesu.Irudhaya.Dhasan/git/demodev/demodev/index.html";
         String expectedTitle = "Industrious by TEMPLATED"; 	
         String actualTitle = "";
-		
+        String exp="test8800";
 		
 		
 		
@@ -36,25 +35,25 @@ public class jesu1 {
         String xPathItemSelector = "//*[@id=\"header\"]/a";
         WebElement dropDownItem = driver.findElement(By.xpath(xPathItemSelector));
         if (dropDownItem.isDisplayed() ) {
-        	
-        	
+        	     	
         	 System.out.println("Heading is existd!");
-        	 WebElement dropdown = driver.findElement(By.className("logo"));
- 			
- 			boolean status = true;
- 			
- 			if(status=true){
- 				System.out.println("heading validated");
- 			} else {
- 				System.out.println("heading validation failed");
- 			}
+        	 String dropdown1 = driver.findElement(By.className("logo")).getText();
+     		
+           	 if (dropdown1.matches(exp)){
+                 System.out.println("Heading is correct and testing passed");
+             }
+             else{
+                 System.out.println("Heading is wrong and testcase failed");
+             }
         	 
+        
         } else {
             System.out.println("Heading Verification Test Failed");
         };
 
 		
-       
+   	
+         	 
         
         
         
