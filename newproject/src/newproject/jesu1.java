@@ -1,6 +1,8 @@
 package newproject;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -28,6 +30,20 @@ public class jesu1 {
             System.out.println("Title Verification Test Failed");
         }
     
+        
+        String xPathItemSelector = "//*[@id=\"header\"]/a";
+        WebElement dropDownItem = driver.findElement(By.xpath(xPathItemSelector));
+        if (dropDownItem.isDisplayed() ) {
+        	 System.out.println("Heading Verification Test Passed!");
+        } else {
+            System.out.println("Heading Verification Test Failed");
+        };
+
+        	 
+       
+        
+        
+        
         driver.close();
 		
 		
