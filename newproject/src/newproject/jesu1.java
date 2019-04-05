@@ -9,6 +9,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class jesu1 {
 
+	/**
+	 * @param args
+	 */
 	public static void main (String args[]){
 		//System.setProperty("webdriver.gecko1.driver","C:\\Users\\Jesu.Irudhaya.Dhasan\\Gechko1\\geckodriver.exe");
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
@@ -51,12 +54,7 @@ public class jesu1 {
             System.out.println("Heading Verification Test Failed");
         };
 
-		
-   	
-         	 
-        
-        
-        
+ 
         driver.close();
 		
 		
